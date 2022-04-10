@@ -69,3 +69,15 @@
 .state-list li:hover{
     box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
 }
+
+.btn-white{
+    background-color: white;
+    border-radius: 8px;
+    transition: .2s linear all;
+    font-weight: 550!important;
+    font-size: 14px;
+}
+.btn-white:hover{
+    background-color: whitesmoke;
+    color: #6c757d;
+}

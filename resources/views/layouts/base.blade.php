@@ -16,7 +16,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md text-danger" style="background:rgb(220 53 69 / 13%)">
         <div class="container">
-            <a href="" style="color: #dc3545" class="navbar-brand small fs-6 fw-bold mx-auto">Mission Plasma</a>
+            <a href="" style="color: #dc3545" class="navbar-brand small fs-6 fw-bold">Mission Plasma</a>
+            <a href="" class="btn btn-white ms-auto">Request for Plasma</a>
+            <a href="#donor_modal" data-bs-toggle="modal" class="btn btn-white ms-3">Apply as Donor</a>
         </div>
     </nav>
 

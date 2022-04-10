@@ -14,7 +14,7 @@
             <ul class="list-group mt-5">
                 <div class="d-flex mb-2">
                     <li class="list-group-item list-group-item-action border-0 bg-light">State</li>
-                    <li class="list-group-item list-group-item-action border-0  bg-light text-center">Donar</li>
+                    <li class="list-group-item list-group-item-action border-0  bg-light text-center">Donor</li>
                     <li class="list-group-item list-group-item-action border-0  bg-light text-center">Requester</li>
                 </div>
                 <div class="d-flex mb-1 state-list">
@@ -52,4 +52,61 @@
         </div>
     </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="donor_modal" tabindex="-1" aria-labelledby="donor_modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="border-radius: 10px;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="donor_modal">Apply as Donor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="POST">
+              @csrf
+              <div class="row mb-3">
+                <div class="col-8">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control shadow-none" id="name">
+                </div>
+                <div class="col">
+                    <label for="name">Age</label>
+                    <input type="text" name="name" class="form-control shadow-none" id="name">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" class="form-select">
+                        <option value="" hidden disabled selected>select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="blood_group">Blood Group</label>
+                    <select name="blood_group" id="blood_group" class="form-select">
+                        <option value="" selected hidden disabled>select</option>
+                        <option value="O+">O +</option>
+                        <option value="O+">O -</option>
+                        <option value="O+">A -</option>
+                        <option value="O+">A +</option>
+                        <option value="O+">B +</option>
+                        <option value="O+">B -</option>
+                        <option value="O+">AB +</option>
+                        <option value="O+">AB -</option>
+
+                    </select>
+                </div>
+              </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
